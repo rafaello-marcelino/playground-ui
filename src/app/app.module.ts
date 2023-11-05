@@ -13,6 +13,7 @@ import { BirdsComponent } from './birds/birds.component';
 import { AstroComponent } from './astro/astro.component';
 import { RandomsComponent } from './randoms/randoms.component';
 import { StreetComponent } from './street/street.component';
+import { ModalCarouselComponent } from './modal-carousel/modal-carousel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { StreetComponent } from './street/street.component';
     BirdsComponent,
     AstroComponent,
     RandomsComponent,
-    StreetComponent
+    StreetComponent,
+    ModalCarouselComponent
   ],
   imports: [
     BrowserModule,
