@@ -5,3 +5,7 @@
 
 /* b4b4b4-grey
 8930e8-violet */
+
+.container {
+    max-width: 1140px;
+}
