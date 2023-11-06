@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./astro.component.css']
 })
 export class AstroComponent {
+  img01: string = "./assets/website/Astro/IMG_1633-HDR-Enhanced.jpg";
+  img02: string = "./assets/website/Astro/IMG_4079-HDR.jpg";
+  img03: string = "./assets/website/Astro/IMG_4111.jpg";
+  img04: string = "./assets/website/Astro/IMG_7643-HDR.jpg";
+  img05: string = "./assets/website/Astro/IMG_1634.jpg";
+  
+  source : string = '';
 
+
+  sendToModal(src : string) {
+    this.source = src;
+  }
 }
