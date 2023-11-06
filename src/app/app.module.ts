@@ -14,6 +14,12 @@ import { AstroComponent } from './astro/astro.component';
 import { RandomsComponent } from './randoms/randoms.component';
 import { StreetComponent } from './street/street.component';
 import { ModalCarouselComponent } from './modal-carousel/modal-carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './about/about.component';
+import { GearComponent } from './gear/gear.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,11 +34,17 @@ import { ModalCarouselComponent } from './modal-carousel/modal-carousel.componen
     AstroComponent,
     RandomsComponent,
     StreetComponent,
-    ModalCarouselComponent
+    ModalCarouselComponent,
+    AboutComponent,
+    GearComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
