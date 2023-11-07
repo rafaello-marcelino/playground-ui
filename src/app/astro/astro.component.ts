@@ -12,10 +12,10 @@ export class AstroComponent {
   img04: string = "./assets/website/Astro/IMG_7643-HDR.jpg";
   img05: string = "./assets/website/Astro/IMG_1634.jpg";
   
-  source : string = '';
+  astro : string = '';
 
 
   sendToModal(src : string) {
-    this.source = src;
+    this.astro = src;
   }
 }

@@ -1,7 +1,7 @@
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <div class="flex w-full mb-20 flex-wrap">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Bird Photos</h1>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Random Photos</h1>
       <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
     </div>
     <div class="flex flex-wrap md:-m-2 -m-1">
@@ -53,8 +53,6 @@
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img11}}" (click)="sendToModal(img11)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
         </div>
-      </div>
-      <div class="flex flex-wrap">
         <div class="md:p-2 p-1 w-1/4">
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img12}}" (click)="sendToModal(img12)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
@@ -71,8 +69,6 @@
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img15}}" (click)="sendToModal(img15)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
         </div>
-      </div>
-      <div class="flex flex-wrap">
         <div class="md:p-2 p-1 w-1/4">
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img16}}" (click)="sendToModal(img16)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
@@ -89,10 +85,6 @@
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img19}}" (click)="sendToModal(img19)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
         </div>
-      </div>
-
-      
-      <div class="flex flex-wrap">
         <div class="md:p-2 p-1 w-1/4">
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img20}}" (click)="sendToModal(img20)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
@@ -109,8 +101,6 @@
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img23}}" (click)="sendToModal(img23)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
         </div>
-      </div>
-      <div class="flex flex-wrap">
         <div class="md:p-2 p-1 w-1/4">
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img24}}" (click)="sendToModal(img24)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
@@ -127,8 +117,6 @@
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img27}}" (click)="sendToModal(img27)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
         </div>
-      </div>
-      <div class="flex flex-wrap">
         <div class="md:p-2 p-1 w-1/4">
           <img alt="gallery" class="w-full object-cover h-full object-center block" src="{{img28}}" (click)="sendToModal(img28)"
           data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" >
@@ -150,16 +138,4 @@
   </div>
 </section>
 
-<div id="extralarge-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-  <div class="relative w-full max-w-7xl max-h-full">
-      <!-- Modal content -->
-      <div class="relative  rounded-lg  dark:bg-gray-700">
-          <!-- Modal body -->
-          <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative  overflow-hidden rounded-lg" style="height: 80vh;">
-                  <img src="{{source}}" class="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">  
-              </div>                        
-          </div>
-      </div>
-  </div>
-</div>
+<app-modal-carousel [source]="random"></app-modal-carousel>

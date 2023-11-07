@@ -30,10 +30,10 @@ export class BirdsComponent {
   img22: string = "./assets/website/Birds/IMG_9942-Enhanced-NR.jpg";
   img23: string = "./assets/website/Birds/IMG_9976.jpg";
   
-  source : string = '';
+  bird : string = '';
 
 
   sendToModal(src : string) {
-    this.source = src;
+    this.bird = src;
   }
 }

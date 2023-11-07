@@ -22,10 +22,10 @@ export class LandComponent {
   img13: string = "./assets/website/Landscapes/IMG_9244.jpg";
   img14: string = "./assets/website/Landscapes/IMG_9643.jpg";
   
-  source : string = '';
+  land : string = '';
 
 
   sendToModal(src : string) {
-    this.source = src;
+    this.land = src;
   }
 }

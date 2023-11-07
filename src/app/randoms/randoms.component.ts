@@ -6,6 +6,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./randoms.component.css']
 })
 export class RandomsComponent {
+  // public images  : string [] = [
+  //   "./assets/website/Randoms/IMG_1231.jpg",
+  //   "./assets/website/Randoms/IMG_0005.jpg",
+  //   "./assets/website/Randoms/IMG_0085.jpg",
+  //   "./assets/website/Randoms/IMG_0414.jpg",
+  //   "./assets/website/Randoms/IMG_0427.jpg",
+  //   "./assets/website/Randoms/IMG_0544-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_0854.jpg",
+  //   "./assets/website/Randoms/IMG_0874.jpg",
+  //   "./assets/website/Randoms/IMG_0884.jpg",
+  //   "./assets/website/Randoms/IMG_0896-2.jpg",
+  //   "./assets/website/Randoms/IMG_0908.jpg",
+  //   "./assets/website/Randoms/IMG_1001-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_1208.jpg",
+  //   "./assets/website/Randoms/IMG_1310.jpg",
+  //   "./assets/website/Randoms/IMG_1313.jpg",
+  //   "./assets/website/Randoms/IMG_1320.jpg",
+  //   "./assets/website/Randoms/IMG_1534-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_1545-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_1546-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_1730-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_2045.jpg",
+  //   "./assets/website/Randoms/IMG_2050.jpg",
+  //   "./assets/website/Randoms/IMG_2194.jpg",
+  //   "./assets/website/Randoms/IMG_7158.jpg",
+  //   "./assets/website/Randoms/IMG_7438.jpg",
+  //   "./assets/website/Randoms/IMG_8354.jpg",
+  //   "./assets/website/Randoms/IMG_8497.jpg",
+  //   "./assets/website/Randoms/IMG_8560.jpg",
+  //   "./assets/website/Randoms/IMG_9303-Enhanced-NR.jpg",
+  //   "./assets/website/Randoms/IMG_9335.jpg",
+  //   "./assets/website/Randoms/IMG_9921-Enhanced-NR.jpg"
+  // ];
   img01: string = "./assets/website/Randoms/IMG_1231.jpg";
   img02: string = "./assets/website/Randoms/IMG_0005.jpg";
   img03: string = "./assets/website/Randoms/IMG_0085.jpg";
@@ -38,10 +71,10 @@ export class RandomsComponent {
   img30: string = "./assets/website/Randoms/IMG_9335.jpg";
   img31: string = "./assets/website/Randoms/IMG_9921-Enhanced-NR.jpg";
   
-  source : string = '';
+  random : string = '';
 
 
   sendToModal(src : string) {
-    this.source = src;
+    this.random = src;
   }
 }
