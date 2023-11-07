@@ -115,4 +115,18 @@
   </section>
   
 
-  <app-modal-carousel [source]="bird"></app-modal-carousel>
+  <div id="extralarge-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-7xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative  rounded-lg  dark:bg-gray-700">
+            <!-- Modal body -->
+            
+            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+                <div class="relative overflow-hidden rounded-lg" style="height: 80vh;">
+                    
+                    <img src="{{bird}}" class="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">  
+                </div>                        
+            </div>
+        </div>
+    </div>
+  </div>
