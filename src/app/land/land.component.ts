@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-land',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./land.component.css']
 })
 export class LandComponent {
+  land : string = '';
+  ngOnInit() { initFlowbite() }
   // img1: string = "https://drive.google.com/uc?export=view&id=1mksTGfdruJ7iz0wKwI10u-t0qXvWzJ-k";
   img01: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
   img02: string = "./assets/website/Landscapes/IMG_0257.jpg";
@@ -22,10 +25,11 @@ export class LandComponent {
   img13: string = "./assets/website/Landscapes/IMG_9244.jpg";
   img14: string = "./assets/website/Landscapes/IMG_9643.jpg";
   
-  land : string = '';
 
-
-  sendToModal(src : string) {
-    this.land = src;
+  onClick(event: { target: any; srcElement: any; currentTarget: any; }){
+    const imgElem = event.target;
+    var target = event.target || event.srcElement || event.currentTarget;
+    var srcAttr = target.attributes.src;
+    this.land = srcAttr.nodeValue;
   }
 }

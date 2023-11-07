@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-birds',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./birds.component.css']
 })
 export class BirdsComponent {
+  bird : string = '';
+  ngOnInit() { initFlowbite() }
   img01: string = "./assets/website/Birds/IMG_0627-Enhanced-NR.jpg";
   img02: string = "./assets/website/Birds/IMG_0040.jpg";
   img03: string = "./assets/website/Birds/IMG_0377-Enhanced-NR.jpg";
@@ -30,10 +33,12 @@ export class BirdsComponent {
   img22: string = "./assets/website/Birds/IMG_9942-Enhanced-NR.jpg";
   img23: string = "./assets/website/Birds/IMG_9976.jpg";
   
-  bird : string = '';
 
 
-  sendToModal(src : string) {
-    this.bird = src;
+  onClick(event: { target: any; srcElement: any; currentTarget: any; }){
+    const imgElem = event.target;
+    var target = event.target || event.srcElement || event.currentTarget;
+    var srcAttr = target.attributes.src;
+    this.bird = srcAttr.nodeValue;
   }
 }

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-modal-carousel',
@@ -7,5 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 
 export class ModalCarouselComponent {
-  @Input() source : string = '';
+  
+  ngOnInit() { initFlowbite() }
+  @Input() source : String = '';
+  
 }
