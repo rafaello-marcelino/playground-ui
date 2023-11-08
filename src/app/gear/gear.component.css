@@ -18,9 +18,14 @@
         height: 71vh;
     }
 }
+@media (min-width: 1024px){
+    .carouselresp {
+        height: 90vh;
+    }
+}
 @media (min-width: 1440px){
     .carouselresp {
-        height: 128vh;
+        height: 88vh;
     }
 }
 @media (min-width: 2560px){
