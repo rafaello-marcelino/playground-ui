@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { initFlowbite } from 'flowbite';
+import { ModalCarouselComponent } from '../modal-carousel/modal-carousel.component';
 
 @Component({
   selector: 'app-street',
@@ -7,9 +9,7 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./street.component.css']
 })
 export class StreetComponent {
-  street : String = '';
-
-  ngOnInit() { initFlowbite() }
+  modalSource : String = '';
   img01: string = "./assets/website/Street/IMG_8497.jpg";
   img02: string = "./assets/website/Street/IMG_0854.jpg";
   img03: string = "./assets/website/Street/IMG_0896-2.jpg";
@@ -26,7 +26,7 @@ export class StreetComponent {
     const imgElem = event.target;
     var target = event.target || event.srcElement || event.currentTarget;
     var srcAttr = target.attributes.src;
-    this.street = srcAttr.nodeValue;
+    this.modalSource = srcAttr.nodeValue;
   }
 
 }

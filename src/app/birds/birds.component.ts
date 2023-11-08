@@ -7,8 +7,7 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./birds.component.css']
 })
 export class BirdsComponent {
-  bird : string = '';
-  ngOnInit() { initFlowbite() }
+  modalSource : string = '';
   img01: string = "./assets/website/Birds/IMG_0627-Enhanced-NR.jpg";
   img02: string = "./assets/website/Birds/IMG_0040.jpg";
   img03: string = "./assets/website/Birds/IMG_0377-Enhanced-NR.jpg";
@@ -39,6 +38,6 @@ export class BirdsComponent {
     const imgElem = event.target;
     var target = event.target || event.srcElement || event.currentTarget;
     var srcAttr = target.attributes.src;
-    this.bird = srcAttr.nodeValue;
+    this.modalSource = srcAttr.nodeValue;
   }
 }

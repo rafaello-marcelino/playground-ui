@@ -7,8 +7,8 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./randoms.component.css']
 })
 export class RandomsComponent {
-  random : string = '';
-  ngOnInit() { initFlowbite() }
+  modalSource : string = '';
+
   img01: string = "./assets/website/Randoms/IMG_1231.jpg";
   img02: string = "./assets/website/Randoms/IMG_0005.jpg";
   img03: string = "./assets/website/Randoms/IMG_0085.jpg";
@@ -39,7 +39,7 @@ export class RandomsComponent {
     const imgElem = event.target;
     var target = event.target || event.srcElement || event.currentTarget;
     var srcAttr = target.attributes.src;
-    this.random = srcAttr.nodeValue;
+    this.modalSource = srcAttr.nodeValue;
   }
 
   

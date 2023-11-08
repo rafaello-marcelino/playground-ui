@@ -8,9 +8,8 @@ import { initFlowbite } from 'flowbite';
 })
 
 export class AstroComponent {
-  astro : String = '';
+  modalSource : String = '';
 
-  ngOnInit() { initFlowbite() }
   img01: string = "./assets/website/Astro/IMG_1633-HDR-Enhanced.jpg";
   img02: string = "./assets/website/Astro/IMG_4079-HDR.jpg";
   img03: string = "./assets/website/Astro/IMG_4111.jpg";
@@ -22,7 +21,7 @@ export class AstroComponent {
     const imgElem = event.target;
     var target = event.target || event.srcElement || event.currentTarget;
     var srcAttr = target.attributes.src;
-    this.astro = srcAttr.nodeValue;
+    this.modalSource = srcAttr.nodeValue;
   }
 
 }

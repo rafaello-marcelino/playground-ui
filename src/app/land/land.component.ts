@@ -7,8 +7,7 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./land.component.css']
 })
 export class LandComponent {
-  land : string = '';
-  ngOnInit() { initFlowbite() }
+  modalSource : string = '';
   // img1: string = "https://drive.google.com/uc?export=view&id=1mksTGfdruJ7iz0wKwI10u-t0qXvWzJ-k";
   img01: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
   img02: string = "./assets/website/Landscapes/IMG_0257.jpg";
@@ -30,6 +29,6 @@ export class LandComponent {
     const imgElem = event.target;
     var target = event.target || event.srcElement || event.currentTarget;
     var srcAttr = target.attributes.src;
-    this.land = srcAttr.nodeValue;
+    this.modalSource = srcAttr.nodeValue;
   }
 }
