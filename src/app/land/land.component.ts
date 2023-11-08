@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -8,6 +9,9 @@ import { initFlowbite } from 'flowbite';
 })
 export class LandComponent {
   modalSource : string = '';
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Playgound - Landscapes')
+  }
   // img1: string = "https://drive.google.com/uc?export=view&id=1mksTGfdruJ7iz0wKwI10u-t0qXvWzJ-k";
   img01: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
   img02: string = "./assets/website/Landscapes/IMG_0257.jpg";

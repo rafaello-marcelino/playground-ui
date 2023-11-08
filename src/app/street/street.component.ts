@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 import { ModalCarouselComponent } from '../modal-carousel/modal-carousel.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-street',
@@ -10,6 +11,9 @@ import { ModalCarouselComponent } from '../modal-carousel/modal-carousel.compone
 })
 export class StreetComponent {
   modalSource : String = '';
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Playgound - Street')
+  }
   img01: string = "./assets/website/Street/IMG_8497.jpg";
   img02: string = "./assets/website/Street/IMG_0854.jpg";
   img03: string = "./assets/website/Street/IMG_0896-2.jpg";

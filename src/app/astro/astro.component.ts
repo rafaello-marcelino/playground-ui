@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -9,6 +10,9 @@ import { initFlowbite } from 'flowbite';
 
 export class AstroComponent {
   modalSource : String = '';
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Playgound - Astro')
+  }
 
   img01: string = "./assets/website/Astro/IMG_1633-HDR-Enhanced.jpg";
   img02: string = "./assets/website/Astro/IMG_4079-HDR.jpg";

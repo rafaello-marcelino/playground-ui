@@ -22,11 +22,11 @@ export class ContactComponent {
   errorSend : boolean = false;
   isEmailValid:boolean = true;
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"; 
-  constructor(private titleService: Title, 
-    private emailService: EmailService,
-    private formBuilder: FormBuilder) {
-    this.titleService.setTitle('Playgound')
-  }
+  // constructor(private titleService: Title, 
+  //   private emailService: EmailService,
+  //   private formBuilder: FormBuilder) {
+  //   this.titleService.setTitle('Playgound')
+  // }
 
   validateEmail(){
     // suppose value is"https://www.google.com";

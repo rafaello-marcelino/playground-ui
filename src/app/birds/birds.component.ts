@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -8,6 +9,9 @@ import { initFlowbite } from 'flowbite';
 })
 export class BirdsComponent {
   modalSource : string = '';
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Playgound - Birds')
+  }
   img01: string = "./assets/website/Birds/IMG_0627-Enhanced-NR.jpg";
   img02: string = "./assets/website/Birds/IMG_0040.jpg";
   img03: string = "./assets/website/Birds/IMG_0377-Enhanced-NR.jpg";

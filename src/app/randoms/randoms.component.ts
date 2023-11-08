@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -8,6 +9,9 @@ import { initFlowbite } from 'flowbite';
 })
 export class RandomsComponent {
   modalSource : string = '';
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Playgound - Randoms')
+  }
 
   img01: string = "./assets/website/Randoms/IMG_1231.jpg";
   img02: string = "./assets/website/Randoms/IMG_0005.jpg";
