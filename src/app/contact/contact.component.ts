@@ -25,7 +25,7 @@ export class ContactComponent {
   constructor(private titleService: Title, 
     private emailService: EmailService,
     private formBuilder: FormBuilder) {
-    this.titleService.setTitle('Rafaello - Home')
+    this.titleService.setTitle('Playgound')
   }
 
   validateEmail(){
