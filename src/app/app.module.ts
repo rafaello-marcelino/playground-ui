@@ -20,6 +20,8 @@ import { GearComponent } from './gear/gear.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { KeyboardComponent } from './keyboard/keyboard.component';
+import { CustomsComponent } from './customs/customs.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { FormsModule } from '@angular/forms';
     ModalCarouselComponent,
     AboutComponent,
     GearComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    KeyboardComponent,
+    CustomsComponent
   ],
   imports: [
     BrowserModule,

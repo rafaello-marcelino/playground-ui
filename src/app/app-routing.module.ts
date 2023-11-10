@@ -11,6 +11,8 @@ import { StreetComponent } from './street/street.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { AboutComponent } from './about/about.component';
 import { GearComponent } from './gear/gear.component';
+import { KeyboardComponent } from './keyboard/keyboard.component';
+import { CustomsComponent } from './customs/customs.component';
 
 const routes: Routes = [
   {path: `home`, component: HomeComponent,children : [
@@ -21,14 +23,19 @@ const routes: Routes = [
   ]},
   {path: `samples`, component: SamplesComponent, 
   children : [
+    {path: `astro`, component: AstroComponent},
     {path: `land`, component: LandComponent },
     {path: `birds`, component: BirdsComponent},
-    {path: `astro`, component: AstroComponent},
     {path: `street`, component: StreetComponent},
     {path: `randoms`, component: RandomsComponent},
-    {path: `**`, component: LandComponent, pathMatch:'full'},
+    {path: `**`, component: AstroComponent, pathMatch:'full'}
   ]},
-  {path: `hobbies`, component: HobbiesComponent},
+  {path: `hobbies`, component: HobbiesComponent, 
+  children : [
+    {path: `keyboard`, component: KeyboardComponent},
+    {path: `customs`, component: CustomsComponent},
+    {path: `**`, component: KeyboardComponent, pathMatch:'full'}
+  ]},
   {path: `**`, component: HomeComponent, pathMatch:'full'}
 ];
 
