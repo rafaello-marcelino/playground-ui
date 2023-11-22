@@ -12,21 +12,27 @@ export class LandComponent {
   constructor(private titleService: Title) {
     this.titleService.setTitle('Playgound - Landscapes')
   }
-  img00: string = "./assets/website/Landscapes/IMG_1870.jpg";
-  img01: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
-  img02: string = "./assets/website/Landscapes/IMG_0257.jpg";
-  img03: string = "./assets/website/Landscapes/IMG_1088.jpg";
-  img04: string = "./assets/website/Landscapes/IMG_1102.jpg";
-  img05: string = "./assets/website/Landscapes/IMG_1107.jpg";
-  img06: string = "./assets/website/Landscapes/IMG_1212.jpg";
-  img07: string = "./assets/website/Landscapes/IMG_1324.jpg";
-  img08: string = "./assets/website/Landscapes/IMG_1330-Edit.jpg";
-  img09: string = "./assets/website/Landscapes/IMG_1371-Edit.jpg";
-  img10: string = "./assets/website/Landscapes/IMG_1722-Edit.jpg";
-  img11: string = "./assets/website/Landscapes/IMG_0193.jpg";
-  img12: string = "./assets/website/Landscapes/IMG_9243.jpg";
-  img13: string = "./assets/website/Landscapes/IMG_9244.jpg";
-  img14: string = "./assets/website/Landscapes/IMG_9643.jpg";
+  img01: string = "./assets/website/Landscapes/IMG_1870.jpg";
+  
+  img02: string = "./assets/website/Landscapes/IMG_1212.jpg";
+  img03: string = "./assets/website/Landscapes/IMG_1371-Edit.jpg";
+  img04: string = "./assets/website/Landscapes/IMG_3307-Enhanced-NR.jpg";
+  img05: string = "./assets/website/Landscapes/IMG_3232-Enhanced-NR.jpg";
+  // IMG_1371-Edit
+  img06: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
+  img07: string = "./assets/website/Landscapes/IMG_0257.jpg";
+  img08: string = "./assets/website/Landscapes/IMG_1088.jpg";
+  img09: string = "./assets/website/Landscapes/IMG_1102.jpg";
+  img10: string = "./assets/website/Landscapes/IMG_1107.jpg";
+  img11: string = "./assets/website/Landscapes/IMG_3246-Enhanced-NR.jpg";
+  img12: string = "./assets/website/Landscapes/IMG_1324.jpg";
+  img13: string = "./assets/website/Landscapes/IMG_1330-Edit.jpg";
+  img14: string = "./assets/website/Landscapes/IMG_1722-Edit.jpg";
+  img15: string = "./assets/website/Landscapes/IMG_3342-Enhanced-NR.jpg";
+  img16: string = "./assets/website/Landscapes/IMG_0193.jpg";
+  img17: string = "./assets/website/Landscapes/IMG_9243.jpg";
+  img18: string = "./assets/website/Landscapes/IMG_9244.jpg";
+  img19: string = "./assets/website/Landscapes/IMG_9643.jpg";
   
   
   // img00: string = "https://drive.google.com/uc?export=view&id=1ao5steSdncG8Gnoct9SHBM16iGFppXS4";
