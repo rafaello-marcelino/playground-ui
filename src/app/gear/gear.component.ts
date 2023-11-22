@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-gear',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./gear.component.css']
 })
 export class GearComponent {
+  modalSource : string = '';
+  @HostListener('contextmenu', ['$event'])
+  onRightClick(event: { preventDefault: () => void; }) {
+  event.preventDefault();
+}
   img01: string = "./assets/website/Gear/gear.jpg";
   img02: string = "./assets/website/Gear/90D.jpg";
   img03: string = "./assets/website/Gear/Lenses.jpg";
@@ -17,4 +22,11 @@ export class GearComponent {
   // img03: string = "https://drive.google.com/uc?export=view&id=16ptE5PQkosIDHNS2wuqvCBKLHmx89QmT";
   // img04: string = "https://drive.google.com/uc?export=view&id=1ClfLR5wf3XuX8O5bw4QhlKX063OhGM2D";
   // img05: string = "https://drive.google.com/uc?export=view&id=1XjJJwvpnTndOwcOJZZbJ5RybYNLmhTn4";
+
+  onClick(event: { target: any; srcElement: any; currentTarget: any; }){
+    const imgElem = event.target;
+    var target = event.target || event.srcElement || event.currentTarget;
+    var srcAttr = target.attributes.src;
+    this.modalSource = srcAttr.nodeValue;
+  }
 }
