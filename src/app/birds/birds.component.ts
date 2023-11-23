@@ -36,30 +36,29 @@ export class BirdsComponent {
   img22: string = "./assets/website/Birds/IMG_9942-Enhanced-NR.jpg";
   img23: string = "./assets/website/Birds/IMG_9976.jpg";
 
-
   // img01: string = "https://drive.google.com/uc?export=view&id=1tr4lsdbvkfWepp_gbHnZTI9QgVsApcld";
   // img02: string = "https://drive.google.com/uc?export=view&id=1aipRpJDjmu417BD6lpd7JLx-dn7vWA3e";
-  // img03: string = "https://drive.google.com/uc?export=view&id=1gJL0lc-1l6vi-dK69md21K57qgZTXK8Y";
-  // img04: string = "https://drive.google.com/uc?export=view&id=19HQBS0qI9sStpwfwUx9NfQbTShjJ7vRK";
+  // img03: string = "https://drive.google.com/uc?export=view&id=1ytVQ580JHY9EoJ_ZDUPz46wxaMzUKGHW";
+  // img04: string = "https://drive.google.com/uc?export=view&id=1r_50J3pTo7xQ9quslqoFWRPlxvZEM3E0";
   // img05: string = "https://drive.google.com/uc?export=view&id=1ANTKS4uSM3Gw8-GIxQKtP-swiVLHDYuG";
-  // img06: string = "https://drive.google.com/uc?export=view&id=1mp_EVtrzy5ffltOPpL2yG1QHzBQEERda";
-  // img07: string = "https://drive.google.com/uc?export=view&id=1nn3B8Ve4IKnIYz_8W2dCL27CI9rUSiLT";
-  // img08: string = "https://drive.google.com/uc?export=view&id=1qIQHxKRyzquCl21h_zzI7WThRLqTjfr0";
-  // img09: string = "https://drive.google.com/uc?export=view&id=1nwAT7SGhgTaTrSoKhP2sg8VgSvGs1jFY";
-  // img10: string = "https://drive.google.com/uc?export=view&id=1YKvZpbnoSFdQMREncm6lRcBNHC9Bxdgz";
-  // img11: string = "https://drive.google.com/uc?export=view&id=1xnlRsctt0mG0aXWfVcW-_PjASJbGxNXx";
-  // img12: string = "https://drive.google.com/uc?export=view&id=1x7fnyjKvlaDwhNAvjvMzzloLlUYmNsLq";
-  // img13: string = "https://drive.google.com/uc?export=view&id=1Y1TPSo3DiGycFUBjRwC8GZQCK8iAdfa6";
-  // img14: string = "https://drive.google.com/uc?export=view&id=1_yhomS2tai9Pc-5-PifhXDY6nsSCzoyu";
-  // img15: string = "https://drive.google.com/uc?export=view&id=1w_SAJ2bJxORpijUoAaoEBBP3eQ_9GSOF";
-  // img16: string = "https://drive.google.com/uc?export=view&id=1mZ61IW3NjcPRr1rycVrwuxqVZ01oKFD7";
-  // img17: string = "https://drive.google.com/uc?export=view&id=17P4R-xXGxIvI5C-K_SPjCFX4igbn2W3j";
-  // img18: string = "https://drive.google.com/uc?export=view&id=1dTI54vVYBR-_MHSb0lGDLBh7Re5a1mYu";
-  // img19: string = "https://drive.google.com/uc?export=view&id=13yihm9UPBsVWjPNAA0Evwx5vAr87PIDI";
-  // img20: string = "https://drive.google.com/uc?export=view&id=1eb1dD0PSKRoWZ7hSjHmZFtW09TO0g9Yp";
-  // img21: string = "https://drive.google.com/uc?export=view&id=1xz5sQyH0CLmAAnWiDZTxHpL9y3nqvefe";
-  // img22: string = "https://drive.google.com/uc?export=view&id=1VMbIgcdQdZJJfrRH-lhB5o6EDYa-4AII";
-  // img23: string = "https://drive.google.com/uc?export=view&id=1ytVQ580JHY9EoJ_ZDUPz46wxaMzUKGHW";
+  // img06: string = "https://drive.google.com/uc?export=view&id=1XqokwCaQdEYOqlBniGz0FlX959lBX_Bb";
+  // img07: string = "https://drive.google.com/uc?export=view&id=1mp_EVtrzy5ffltOPpL2yG1QHzBQEERda";
+  // img08: string = "https://drive.google.com/uc?export=view&id=1nn3B8Ve4IKnIYz_8W2dCL27CI9rUSiLT";
+  // img09: string = "https://drive.google.com/uc?export=view&id=1qIQHxKRyzquCl21h_zzI7WThRLqTjfr0";
+  // img10: string = "https://drive.google.com/uc?export=view&id=1nwAT7SGhgTaTrSoKhP2sg8VgSvGs1jFY";
+  // img11: string = "https://drive.google.com/uc?export=view&id=1YKvZpbnoSFdQMREncm6lRcBNHC9Bxdgz";
+  // img12: string = "https://drive.google.com/uc?export=view&id=1xnlRsctt0mG0aXWfVcW-_PjASJbGxNXx";
+  // img13: string = "https://drive.google.com/uc?export=view&id=1x7fnyjKvlaDwhNAvjvMzzloLlUYmNsLq";
+  // img14: string = "https://drive.google.com/uc?export=view&id=1Y1TPSo3DiGycFUBjRwC8GZQCK8iAdfa6";
+  // img15: string = "https://drive.google.com/uc?export=view&id=1_yhomS2tai9Pc-5-PifhXDY6nsSCzoyu";
+  // img16: string = "https://drive.google.com/uc?export=view&id=1w_SAJ2bJxORpijUoAaoEBBP3eQ_9GSOF";
+  // img17: string = "https://drive.google.com/uc?export=view&id=1mZ61IW3NjcPRr1rycVrwuxqVZ01oKFD7";
+  // img18: string = "https://drive.google.com/uc?export=view&id=19HQBS0qI9sStpwfwUx9NfQbTShjJ7vRK";
+  // img19: string = "https://drive.google.com/uc?export=view&id=1dTI54vVYBR-_MHSb0lGDLBh7Re5a1mYu";
+  // img20: string = "https://drive.google.com/uc?export=view&id=1eyQHj5kHdgo4xKmjqMMLNFLubbI6ww6D";
+  // img21: string = "https://drive.google.com/uc?export=view&id=1eb1dD0PSKRoWZ7hSjHmZFtW09TO0g9Yp";
+  // img22: string = "https://drive.google.com/uc?export=view&id=1xz5sQyH0CLmAAnWiDZTxHpL9y3nqvefe";
+  // img23: string = "https://drive.google.com/uc?export=view&id=1VMbIgcdQdZJJfrRH-lhB5o6EDYa-4AII";
 
   
 
