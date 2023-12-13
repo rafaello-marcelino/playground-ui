@@ -20,7 +20,7 @@ export class LandComponent {
   img05: string = "./assets/website/Landscapes/IMG_3232-Enhanced-NR.jpg";
   img06: string = "./assets/website/Landscapes/20230602111809_IMG_0787.jpg";
   img07: string = "./assets/website/Landscapes/IMG_0257.jpg";
-  img08: string = "./assets/website/Landscapes/IMG_1088.jpg";
+  img08: string = "./assets/website/Landscapes/IMG_4548-Enhanced-NR.jpg";
   img09: string = "./assets/website/Landscapes/IMG_1102.jpg";
   img10: string = "./assets/website/Landscapes/IMG_1107.jpg";
   img11: string = "./assets/website/Landscapes/IMG_3246-Enhanced-NR.jpg";

@@ -25,6 +25,7 @@ export class StreetComponent {
   img09: string = "./assets/website/Street/IMG_0874.jpg";
   img10: string = "./assets/website/Street/IMG_1752-Enhanced-NR.jpg";
   img11: string = "./assets/website/Street/IMG_1730-Enhanced-NR.jpg";
+  img12: string = "./assets/website/Street/IMG_4501-Enhanced-NR.jpg";
   // img01: string = "https://drive.google.com/uc?export=view&id=1Qhl6H-YX7fprb4oOxhl_iyvajkQiY02F";
   // img02: string = "https://drive.google.com/uc?export=view&id=1vqg-IYva4Y--wxBE_A_RaYPgmxlrpcAf";
   // img03: string = "https://drive.google.com/uc?export=view&id=1FNgEkdRLf8KxblY3nhn5OQ-hPUBgz34n";

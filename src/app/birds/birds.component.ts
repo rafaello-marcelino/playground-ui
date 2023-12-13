@@ -13,7 +13,7 @@ export class BirdsComponent {
     this.titleService.setTitle('Playgound - Birds')
   }
   img01: string = "./assets/website/Birds/IMG_0627-Enhanced-NR.jpg";
-  img02: string = "./assets/website/Birds/IMG_0040.jpg";
+  img02: string = "./assets/website/Birds/IMG_4334-Enhanced-NR.jpg";
   img03: string = "./assets/website/Birds/IMG_0377-Enhanced-NR.jpg";
   img04: string = "./assets/website/Birds/IMG_2675-Enhanced-NR.jpg";
   img05: string = "./assets/website/Birds/IMG_9282.jpg";
@@ -22,7 +22,7 @@ export class BirdsComponent {
   img08: string = "./assets/website/Birds/IMG_0639-Enhanced-NR.jpg";
   img09: string = "./assets/website/Birds/IMG_1383.jpg";
   img10: string = "./assets/website/Birds/IMG_1681.jpg";
-  img11: string = "./assets/website/Birds/IMG_1683.jpg";
+  img11: string = "./assets/website/Birds/IMG_4235-Enhanced-NR.jpg";
   img12: string = "./assets/website/Birds/IMG_1897-Enhanced-NR.jpg";
   img13: string = "./assets/website/Birds/IMG_1941.jpg";
   img14: string = "./assets/website/Birds/IMG_7243-Enhanced-NR.jpg";
